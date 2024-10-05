@@ -1,0 +1,106 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header and Navigation */
+header {
+    background-color: lightskyblue;
+    padding:  25px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* ให้มันอยู่ด้านบนเสมอ */
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: right;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.nav-menu li {
+    margin: 0 15px;
+}
+
+.nav-menu a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Add padding to the body to account for the fixed header */
+body {
+    padding-top: 60px; /* ปรับตามขนาดของ header */
+}
+
+/* Sections */
+.section {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    
+}
+
+h1, h2, h3 {
+    margin-bottom: 20px;
+}
+
+p {
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    padding: 10px 20px;
+    background-color: #244e98;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.cta-button:hover {
+    background-color: #121759;
+}
+
+/* About Section */
+.about-img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    margin-top: 20px;
+}
+
+/* Footer */
+footer {
+    background-color: rgb(173, 200, 251);
+    color: #fff;
+    padding: 5px 0;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.footer-container a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer-container a:hover {
+    text-decoration: underline;
+}
+
+/* Add padding to the body to account for the fixed footer */
+body {
+    padding-bottom: 60px; /* ปรับตามขนาดของ footer */
+}
