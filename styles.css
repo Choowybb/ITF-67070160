@@ -50,24 +50,21 @@ body {
     
 }
 
-h1, h2, h3 {
+.h1, h2, h3 {
     margin-bottom: 20px;
 }
 
-p {
+.p {
     margin-bottom: 30px;
 }
 
-.cta-button {
+.Lab14-button {
     padding: 10px 20px;
-    background-color: #244e98;
+    background-color: #4f77bb;
+    border-radius: 10%;
     color: #fff;
     border: none;
     cursor: pointer;
-}
-
-.cta-button:hover {
-    background-color: #121759;
 }
 
 /* About Section */
