@@ -1,21 +1,216 @@
-.profile{
-    width: 300px;
-    height: 300px;
+/* --------------------------ALL-------------------------- */
+
+* {
+    font-family: Arial;
+}
+
+input{
+    width: 100%;
+    height: 20px;
+    border-radius: 5px;
+    border: 0.5px solid black;
+    padding: 5px 10px;
+    background-color: transparent;
+    outline: none;
+}
+.title {
+    font-weight: bold;
+    font-size: 15px;
+    font-family: cursive;
+    text-align: center;
+    padding-top: 30px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-blend-mode: color;
+    background:rgb(181, 224, 250);
+    min-height: 1500px;
+}
+
+/* --------------------------CT-------------------------- */
+.contain1 {
+    width: 80%;
+    height: 580px;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 5px 10px 40px 10px;
+    border-radius: 10px;
+    margin-top: 40px;
+    max-width: 1000px;
+    min-width: 350px;
+}
+.contain2 {
+    width: 80%;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 5px 10px 40px 10px;
+    border-radius: 10px;
+    margin-top: 40px;
+    max-width: 1000px;
+}
+
+/* --------------------------PROFILE-------------------------- */
+
+.PF {
+    display: flex;
+    justify-content: center;
+}
+
+.topName {
+    font-size: 25px;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+.topName a {
+    color: black;
+    font-family: cursive;
+    text-decoration: none;
+}
+.topName a:hover {
+    color: darkblue;
+    text-decoration: underline;
+}
+.profile {
+    width: 183px;
+    height: 183px;
     background-image: url(https://i.pinimg.com/originals/67/f2/f0/67f2f03b3b37543343d8337ee4c6ef1d.jpg);
     background-position: center;
     background-size: cover;
     border-radius: 50%;
     position: relative;
 }
-.notify{
-    width: 40px;
-    height: 40px;
-    background-color: lightcoral;
-    display: flex;
+
+.notify {
+    width: 30px ;
+    height: 30px;
+    background-color: firebrick;
+    color: white;
+    border-radius: 50%;
     justify-content: center;
     align-items: center;
-    border-radius:  50%;
+    display: flex;
     position: absolute;
-    bottom: 15px;
-    right: 20px;
+    bottom: 10px;
+    right: 10px;
+    font-weight: bold;
+}
+
+/* --------------------------SET-------------------------- */
+
+.change {
+    padding-top: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 5.2fr 0.8fr 1fr;
+    grid-gap: 10px;
+}
+
+.ChangTxt {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.change button{
+    background-color:rgb(27, 49, 96);
+    border: 2px solid black;
+    border-radius: 0 5px 5px 0;
+    font-weight: bold;
+    color: white;
+}
+.change button:hover{
+    background-color: rgb(108, 114, 190);
+    border-color:rgb(108, 114, 190);
+    color: rgb(0, 0, 0);
+}
+/* --------------------------PHONE-------------------------- */
+
+.phoneInput{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-gap: 10px;
+    margin-top: 10px;
+}
+
+.phoneBt {
+    width: 100%;
+    display: grid ;
+    grid-template-columns: 2fr 3fr 1fr 2fr;
+    grid-gap: 10px;
+    margin-top: 10px;
+}
+
+.addBt {
+    color: white;
+    font-weight: bold;
+    background-color:rgb(110, 167, 254);
+    border: 2px solid deepskyblue;
+    padding: 10px;
+    border-radius: 10px;
+}
+.addBt:hover {
+    background-color: darkblue;
+    border-color: darkblue;
+}
+
+.expBt {
+    color: black;
+    font-weight: bold;
+    background-color: transparent;
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 10px;
+}
+.expBt:hover {
+    color: white;
+    background-color: darkblue;
+    border-color: darkblue;
+}
+
+/* --------------------------TABLE-------------------------- */
+
+.tableBook {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tableBook th,
+.tableBook td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid black;
+}
+
+.tableBook th {
+    text-align: center;
+}
+
+.tableBook th:nth-child(1),
+.tableBook td:nth-child(1) {
+    width: 20%;
+}
+
+.tableBook th:nth-child(2),
+.tableBook td:nth-child(2),
+.tableBook th:nth-child(3),
+.tableBook td:nth-child(3) {
+    width: 40%;
+}
+
+.tableBook td:not(:last-child) {
+    border-right: 1px solid black;
+}
+
+.tableBook th:first-child,
+.tableBook td:first-child {
+    border-left: none;
+}
+
+.tableBook th:last-child,
+.tableBook td:last-child {
+    border-right: none;
 }
